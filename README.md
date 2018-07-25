@@ -102,4 +102,10 @@ to
 
 The tutorials consist of eight different version of the compiled turbulence models. In each of these tutorials a wave is inialized in a domain which is exactly one wave length long with cyclic boundaries and a slip condition at the bed. The cases ending with "Stab" have lambda2=0.05 and are stabilized version of the new turbulence models. In these cases the initial turbulence levels will decay in time. 
 Cases not ending with Stab corresponds to the standard models (with buoyancy production included) and here growth rather than decay in the turbulence level can be seen.
+
+To run a tutorial go to the folder of the tutorials and choose one of the eight cases. 
+Then run the RunScript by typing
+	
+	RunScript
+	
 	
