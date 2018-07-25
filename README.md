@@ -18,7 +18,7 @@ In a linux terminal download the package with git by typing:
 
 	git clone https://github.com/BjarkeEltardLarsen/RANS_stableFE31.git
 	
-Create folder for turbulence model 
+Create folder for turbulence model (if the folders already exist skip this part)
 
 	mkdir $WM_PROJECT_USER_DIR/src $WM_PROJECT_USER_DIR/src/turbulence $WM_PROJECT_USER_DIR/src/turbulence/incompressible
 
@@ -42,7 +42,7 @@ Include the libary of the stabilized turbulence models in the system/controlDict
 
 Change the constant/RASproperties
 Each of the four models can be chosen by uncommenting the desired model.
-If lambda2=0 the models default to their standard OpenFOAM implementation.
+If lambda2=0 the models default to their standard OpenFOAM implementation (but with the buoyancy production term added). 
 
 	RASModel        kOmegaStab;
 	//RASModel        kOmegaSSTStab;
