@@ -17,6 +17,10 @@ Source foam-extend 3.1:
 In a linux terminal download the package with git by typing:
 
 	git clone https://github.com/BjarkeEltardLarsen/RANS_stableFE31.git
+	
+Create folder for turbulence model 
+
+	mkdir $WM_PROJECT_USER_DIR/src $WM_PROJECT_USER_DIR/src/turbulence $WM_PROJECT_USER_DIR/src/turbulence/incompressible
 
 Move the folder to the user source code
 
