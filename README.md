@@ -32,6 +32,10 @@ Go to the directory and compile the turbulence models
 	
 	wmake libso
 	
+Move the tutorials to the desired folder e.g FOAM_RUN
+
+	mv Tutorials $FOAM_RUN
+	
 ## Usage
 Include the libary of the stabilized turbulence models in the system/controlDict folder
 
