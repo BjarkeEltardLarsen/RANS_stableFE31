@@ -1,13 +1,12 @@
 # RANS_stableFE31
 
 ## Introduction to the problem and solution
-In past simulations of free-surface waves (both breaking and non-breaking) using RANS models, there have been a marked a collective tendency to over-estimate the turbulence levels. In cases involving breaking waves, this has even been most pronounced prior to breaking with turbulence levels pre-breaking of same order of magnitude as in the surf-zone. The underlying cause was identified by Mayer and Madsen (2000) who showed that turbulence production exists in potential flow waves. They further showed that if omega falls below a certain threshold, the model becomes unstable, leading to an exponential growth in both the eddy viscosity and turbulent kinetic energy.
+In past simulations of free-surface waves (both breaking and non-breaking) using RANS models, there have been a marked a collective tendency to over-estimate the turbulence levels. In cases involving breaking waves, this has even been most pronounced prior to breaking with turbulence levels pre-breaking of same order of magnitude as in the surf-zone. The underlying cause was originally identified by Mayer and Madsen (2000) who showed that turbulence production exists in potential flow waves. They further showed that if omega falls below a certain threshold, the model becomes unstable, leading to an exponential growth in both the eddy viscosity and turbulent kinetic energy.
 
+In Larsen and Fuhrman (2018) it was proved that (1) standard two-equation closure (k-omega and k-epsilon) are unconditionally unstable and (2) they can be simply and elegantly stabilized, thus solving this long-standing wide-spread problem. 
 
-fe31
-This code is still being developed and is not yet finished. Stablized turbulence models for foam-extend 3.1
-
-Standard two-equation RANS models are unstable when applied to free-surface waves as documented in Larsen and Fuhrman 2018. In Larsen and Fuhrman 2018 it was likewise shown how standard two-equation turbulence models can be formally stabilized. This repository contains formally stabilized versions of standard two-equation turbulence models for foam-extend 3.1.
+This repository contains formally stabilized versions of standard two-equation turbulence models for foam-extend 3.1.
+Additonally all versions in this repository, similar to the model in Larsen and Furhman (2018) also include a buoyancy production term. See e.g. Umlauf et al. (2003) or Burchard (2002) for more details. 
 
 ## Installation
 Source foam-extend 3.1:
@@ -112,5 +111,27 @@ to
 	div(rho*phi,epsilon)
 	div(rho*phi,k)
 
+
+%% References
+
+Burchard, H.
+	"Applied Turbulence modelling for Marine Waters"
+	Springer
+	2002
+
+Larsen, B.E. and Fuhrman, D.R.
+	On the over-production of turbulence beneath surface waves in RANS models
+	J. Fluid Mech.
+	2018 (accepted)
+	
+Mayer, S. & Madsen, P.A. 
+	Simulation of breaking waves in the surf zone using a Navier-Stokes solver. 
+	In: Proc. 25th. ICCE, Sydney. Australia, pp. 928-941.
+ 	2000
+
+Umlauf, L., Burchard, H. and Hutter, K.
+	"Extending the k-omega turbulence model towards oceanic applications"
+	Ocean Modelling. 5(3), 195-218
+	2003
 
 	
