@@ -51,6 +51,8 @@ Then run the RunScript by typing (the tutorials will take a few ours depending o
 The tutorials folder also contain a small animation, which shows the development in the turbulent kinetic energy for all eight tutorials.
 	
 ## Usage
+To use the new versions of the turbulence models for other applications than the tutorials simply make the following changes.
+
 Include the libary of the stabilized turbulence models in the system/controlDict folder
 
 	libs
