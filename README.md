@@ -112,10 +112,10 @@ to
 	div(rho*phi,k)
 
 
-%% References
+## References
 
 Burchard, H.
-	"Applied Turbulence modelling for Marine Waters"
+	Applied Turbulence modelling for Marine Waters
 	Springer
 	2002
 
@@ -130,7 +130,7 @@ Mayer, S. & Madsen, P.A.
  	2000
 
 Umlauf, L., Burchard, H. and Hutter, K.
-	"Extending the k-omega turbulence model towards oceanic applications"
+	Extending the k-omega turbulence model towards oceanic applications
 	Ocean Modelling. 5(3), 195-218
 	2003
 
