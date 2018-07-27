@@ -28,6 +28,8 @@ boundaryField
     }
     bottom
     {
+      type zeroGradient;
+      /*
         type            omegaWallFunction;
         refValue        uniform 0;
         value           uniform 2;
@@ -35,6 +37,7 @@ boundaryField
         kappa           0.41;
         E               9.8;
         beta1           0.075;
+      */
     }
     atmosphere
     {
